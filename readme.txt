@@ -3,11 +3,11 @@ Contributors: SocialIntents
 Tags: contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform
 Requires at least: 3.6
 Tested up to: 3.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add a customizable and targeted email list signup widget to any page.  Integrates with MailChimp, Constant Contact, and CSV.  
+Add a customizable and targeted email list builder widget to any page.  Integrates with MailChimp, Constant Contact, and CSV.  
 
 == Changelog ==
 
@@ -15,8 +15,13 @@ Add a customizable and targeted email list signup widget to any page.  Integrate
 * Intitial Release of the Email List Builder Widget
 
 
+= 1.0.1 =
+* Minor Bug Fixes
+
+
 == Description ==
-Email List Builder by Social Intents lets you quickly add a targeted and customizable popup form toany page to request visitors to join your email list.  It can be configured to display on a particular page, visit or after a specified time on a page.  Add your CSS, your language, and your style to the form.  It's one of the fastest and most effective ways to build your email lists.
+Email List Builder by Social Intents lets you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
+a modal signup form. It can be configured to display on a particular page, or after a specified time on a page.  Add your CSS, your language, and your style to the form.  It's one of the fastest and most effective ways to build your email lists.
 
 To configure the email list plugin, you need a Social Intents account.  Already have an accout?  Great!  Otherwise, sign up for a free trial at <a href="http://www.socialintents.com">www.socialintents.com</a>.
 
@@ -28,7 +33,7 @@ Step 1:  Login to WordPress Admin and search for the plugin 'Email List Builder 
  
 Step 2:  Register for a Free Trial Account right from the plugin or at our website.
 
-Questions or suggests?  Contact us at [socialintents.com](http://www.socialintents.com/).  We'd love to hear from you.
+Questions or suggests?  Contact us at [www.socialintents.com](http://www.socialintents.com/).  We'd love to hear from you.
 
 
 
@@ -36,9 +41,9 @@ Questions or suggests?  Contact us at [socialintents.com](http://www.socialinten
 
 * Simple to setup
 
-* Target specific pages for website visitors
+* Target specific pages or website visitors
 
-* Simple email integration with MailChimp and Constant Contact
+* Email list integration with MailChimp and Constant Contact
 
 * Export email subscribes to a .csv file
 
@@ -46,6 +51,10 @@ Questions or suggests?  Contact us at [socialintents.com](http://www.socialinten
 
 * Customize the widget look and feel with custom CSS, logos, and messages
 
+
+**Other Social Intents Widgets**
+
+We also have Social Sharing, Shopping Cart Saver, and Social Offers widgets available that can be used to grow your social audience and power your sales.
 
 
 To learn more about Social Intents visit us at [socialintents.com](http://www.socialintents.com/).
