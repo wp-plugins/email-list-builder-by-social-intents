@@ -3,7 +3,7 @@ Contributors: SocialIntents
 Tags: contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform
 Requires at least: 3.6
 Tested up to: 3.8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,9 +19,12 @@ Add a customizable and targeted email list builder widget to any page.  Integrat
 * Minor Bug Fixes
 
 
+= 1.0.2 =
+* Support for background images
+
 == Description ==
 Email List Builder by Social Intents lets you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
-a modal signup form. It can be configured to display on a particular page, or after a specified time on a page.  Add your CSS, your language, and your style to the form.  It's one of the fastest and most effective ways to build your email lists.
+a modal signup form. It can be configured to display on a particular page, or after a specified time on a page.  Add your CSS, your language, your background images, and your style to the form.  It's one of the fastest and most effective ways to build your email lists.
 
 To configure the email list plugin, you need a Social Intents account.  Already have an accout?  Great!  Otherwise, sign up for a free trial at <a href="http://www.socialintents.com">www.socialintents.com</a>.
 
@@ -84,7 +87,7 @@ To learn more about Social Intents visit us at [socialintents.com](http://www.so
 
 == Frequently Asked Questions ==
 
-= Do I need a Social Intents account for my chat widget =
+= Do I need a Social Intents account for my email list builder widget =
 
 Yes, you do.  You can sign up for a free trial at [socialintents.com](http://www.socialintents.com/).. 
 
