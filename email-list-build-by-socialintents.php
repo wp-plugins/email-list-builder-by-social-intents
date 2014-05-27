@@ -2,8 +2,8 @@
 /*
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
-Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers available! Free for 30 new email list subscribers a month.
-Version: 1.0.2
+Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
+Version: 1.0.3
 Author: Social Intents
 Author URI: http://www.socialintents.com/
 */
@@ -26,23 +26,24 @@ function elb_insert() {
     if(strlen(get_option('elb_widgetID')) == 32 && get_option('elb_tab_text')) {
         get_currentuserinfo();
 	echo("\n\n<!-- Social Intents Customization -->\n");
-        echo("<div id=\"social-intents-tab\" class=\"social-intents-tab\" style=\"visibility:hidden;\"></div>\n");
-        echo("<div id=\"socialintents-offer\"></div>\n");
         echo("<script type=\"text/javascript\">\n");
-        echo("var socialintents_vars ={\n");
+        echo("var socialintents_vars_email ={\n");
         echo("'widgetId':'".get_option('elb_widgetID')."',\n");
         echo("'tabLocation':'".get_option('elb_tab_placement')."',\n");
         echo("'tabText':'".get_option('elb_tab_text')."',\n");
+echo("'popupHeight':'".get_option('elb_popup_height')."',\n");
+echo("'popupWidth':'".get_option('elb_popup_width')."',\n");
+echo("'backgroundImg':'".get_option('elb_background_img')."',\n");
         echo("'type':'email',\n");
         echo("'tabColor':'".get_option('elb_tab_color')."',\n");
-        echo("'popupHeight':'130px', \n");
-        echo("'tabWidth':'280px',\n");
+        echo("'tabWidth':'180px',\n");
         echo("'marginRight':'60px', \n");
+	echo("'marginTop':'180px', \n");
         echo("'headerTitle':'".get_option('elb_header_text')."'\n");
         echo("};\n");
         echo("(function() {function socialintents(){\n");
         echo("    var siJsHost = ((\"https:\" === document.location.protocol) ? \"https://\" : \"http://\");\n");
-        echo("    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = siJsHost+'www.socialintents.com/api/socialintents.js';\n");
+        echo("    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = siJsHost+'www.socialintents.com/api/email/socialintents.js';\n");
         echo("    var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};\n");
         echo("if (window.attachEvent)window.attachEvent('onload', socialintents);else window.addEventListener('load', socialintents, false);})();\n");
         echo("</script>\n");
@@ -109,7 +110,7 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
 		</p><form id='saveDetailSettings' method="post" action="options.php">
 		<?php wp_nonce_field('update-options') ?>
 		<input type="hidden" name="action" value="update" />
-                <input type="hidden" name="page_options" value="elb_tab_text,elb_tab_placement,elb_header_text,elb_detail_text,elb_time_on_page,elb_tab_color" />
+                <input type="hidden" name="page_options" value="elb_popup_height, elb_popup_width, elb_background_img,elb_tab_text,elb_tab_placement,elb_header_text,elb_detail_text,elb_time_on_page,elb_tab_color" />
 		<table width="100%" >
 		<tr><td width="25%">Tab Text: </td>
 		<td >
@@ -150,6 +151,8 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
      		<select id="elb_tab_placement" name="elb_tab_placement">
 			<option value="bottom" selected>Bottom</option>
 			<option value="top">Top</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
 			<option value="hide">Hide</option>
 		</select> 	
     		<?php 
@@ -158,6 +161,28 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
 		<select id="elb_tab_placement" name="elb_tab_placement">
 			<option value="bottom">Bottom</option>
 			<option value="top" selected>Top</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+			<option value="hide">Hide</option>
+		</select> 
+		<?php 
+			} else if(get_option('elb_tab_placement') == 'right') {
+   		?>
+		<select id="elb_tab_placement" name="elb_tab_placement">
+			<option value="bottom">Bottom</option>
+			<option value="top">Top</option>
+			<option value="right" selected>Right</option>
+			<option value="left">Left</option>
+			<option value="hide">Hide</option>
+		</select> 
+		<?php 
+			} else if(get_option('elb_tab_placement') == 'left') {
+   		?>
+		<select id="elb_tab_placement" name="elb_tab_placement">
+			<option value="bottom">Bottom</option>
+			<option value="top" >Top</option>
+			<option value="right" selected>Right</option>
+			<option value="left">Left</option>
 			<option value="hide">Hide</option>
 		</select> 
 		<?php 
@@ -166,6 +191,8 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
 		<select id="elb_tab_placement" name="elb_tab_placement">
 			<option value="bottom">Bottom</option>
 			<option value="top">Top</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
 			<option value="hide"  selected>Hide</option>
 		</select> 
 		<?php 
@@ -332,6 +359,48 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
 			}
    		?>
 		</td></tr>
+		<tr><td>Popup Height: </td>
+		<td>
+		<?php 
+		if(get_option('elb_popup_height') && get_option('elb_popup_height') != '') {
+     		?>
+     		<input type="text" name="elb_popup_height" id="elb_popup_height" value="<?php echo(get_option('elb_popup_height')) ?>" style="margin:3px;width:100%;" />
+		<?php 
+			} else {
+   		?>
+		<input type="text" name="elb_popup_height" id="elb_popup_height" value="120px" style="margin:3px;width:100%;" placeholder="Height in Pixels - 150px"/>
+		<?php 
+			}
+   		?>
+		</td></tr>
+		<tr><td>Popup Width: </td>
+		<td>
+		<?php 
+		if(get_option('elb_popup_width') && get_option('elb_popup_width') != '') {
+     		?>
+     		<input type="text" name="elb_popup_width" id="elb_popup_width" value="<?php echo(get_option('elb_popup_width')) ?>" style="margin:3px;width:100%;" />
+		<?php 
+			} else {
+   		?>
+		<input type="text" name="elb_popup_width" id="elb_popup_width" value="500px" style="margin:3px;width:100%;" placeholder="Width in Pixels - 560px"/>
+		<?php 
+			}
+   		?>
+		</td></tr>
+		<tr><td>Background Image: </td>
+		<td>
+		<?php 
+		if(get_option('elb_background_img') && get_option('elb_background_img') != '') {
+     		?>
+     		<input type="text" name="elb_background_img" id="elb_background_img" value="<?php echo(get_option('elb_background_img')) ?>" style="margin:3px;width:100%;" />
+		<?php 
+			} else {
+   		?>
+		<input type="text" name="elb_background_img" id="elb_background_img" value="" style="margin:3px;width:100%;" placeholder="Absolute URL:  https://www.yourdomain.com/bg.jpg"/>
+		<?php 
+			}
+   		?>
+		</td></tr>
 		<tr><td></td><td>
 		<input id='elb_inputSaveSettings' type="button" value="<?php _e('Save Settings', $elb_domain) ?>" class="button-primary" /> 
 		<br><small >If you don't see your latest settings reflected in your site, please refresh your browser cache
@@ -366,7 +435,9 @@ var elb_ht= $('#elb_header_text').val();
 var elb_dt= $('#elb_detail_text').val();
 var elb_tp= $('#elb_tab_placement').val();
 var elb_top= $('#elb_time_on_page').val();
-var url = 'https://www.socialintents.com/json/jsonSaveEmailSettings.jsp?tt='+elb_tt+'&ht='+elb_ht+'&wid='+elb_wid+'&dt='+elb_dt+'&tp='+elb_tp+'&top='+elb_top+'&callback=?';sessionStorage.removeItem("settings");
+var elb_ww= $('#elb_popup_width').val();
+var elb_wh= $('#elb_popup_height').val();
+var url = 'https://www.socialintents.com/json/jsonSaveEmailSettings.jsp?tt='+elb_tt+'&ht='+elb_ht+'&wid='+elb_wid+'&dt='+elb_dt+'&tp='+elb_tp+'&wh='+elb_wh+'&ww='+elb_ww+'&top='+elb_top+'&callback=?';sessionStorage.removeItem("settings");
 $.ajax({
    type: 'GET',
     url: url,
