@@ -36,7 +36,7 @@ echo("'popupWidth':'".get_option('elb_popup_width')."',\n");
 echo("'backgroundImg':'".get_option('elb_background_img')."',\n");
         echo("'type':'email',\n");
         echo("'tabColor':'".get_option('elb_tab_color')."',\n");
-        echo("'tabWidth':'180px',\n");
+        echo("'tabWidth':'200px',\n");
         echo("'marginRight':'60px', \n");
 	echo("'marginTop':'180px', \n");
         echo("'headerTitle':'".get_option('elb_header_text')."'\n");
