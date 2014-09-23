@@ -3,7 +3,7 @@
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
 Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
-Version: 1.0.7
+Version: 1.0.8
 Author: Social Intents
 Author URI: http://www.socialintents.com/
 */
@@ -77,7 +77,7 @@ function elb_add_settings_page() {
                 <form id="saveSettings" method="post" action="options.php">
                     <p style="text-align:center"><?php wp_nonce_field('update-options') ?>
 			<a href="http://www.socialintents.com/" title="Email and Social Widgets that help grow your business">
-			<?php echo '<img src="'.plugins_url( 'socialintents.png' , __FILE__ ).'" height="50" width="200" "/> ';?></a></p>
+			<?php echo '<img src="'.plugins_url( 'socialintents.png' , __FILE__ ).'" height="150" "/> ';?></a></p>
 
                     <p><label for="elb_widgetID"><?php printf(__('Enter your Widget Key below to activate the plugin.  If you don\'t have your key but have already signed up, you can <a href=\'http://www.socialintents.com\' target=\'_blank\'>login here</a> to grab your key under your widget --> your code snippet..<br>', $elb_domain), '<strong><a href="http://www.socialintents.com/" title="', '">', '</a></strong>') ?></label><br />
 			<input type="text" name="elb_widgetID" id="elb_widgetID" placeholder="Your Widget Key" value="<?php echo(get_option('elb_widgetID')) ?>" style="width:100%" />
