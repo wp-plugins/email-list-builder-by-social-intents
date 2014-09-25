@@ -3,7 +3,7 @@
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
 Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
-Version: 1.0.8
+Version: 1.0.9
 Author: Social Intents
 Author URI: http://www.socialintents.com/
 */
@@ -33,6 +33,7 @@ function elb_insert() {
         echo("'tabText':'".get_option('elb_tab_text')."',\n");
 echo("'popupHeight':'".get_option('elb_popup_height')."',\n");
 echo("'popupWidth':'".get_option('elb_popup_width')."',\n");
+echo("'roundedCorners':'".get_option('elb_rounded_corners')."',\n");
 echo("'backgroundImg':'".get_option('elb_background_img')."',\n");
         echo("'type':'email',\n");
         echo("'tabColor':'".get_option('elb_tab_color')."',\n");
@@ -106,11 +107,11 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
                
             </div>
 	    <div id="elb_registerComplete" class="inside" style="padding: -20px 10px;display:none;">
-		<p>View reports, setup background images and custom CSS styles, and export email subscribers on our website at <a href='http://www.socialintents.com'>www.socialintents.com</a>
+		<p>View reports, customize CSS styles, and export email subscribers on our website at <a href='http://www.socialintents.com'>www.socialintents.com</a>
 		</p><form id='saveDetailSettings' method="post" action="options.php">
 		<?php wp_nonce_field('update-options') ?>
 		<input type="hidden" name="action" value="update" />
-                <input type="hidden" name="page_options" value="elb_popup_height, elb_popup_width, elb_background_img,elb_tab_text,elb_tab_placement,elb_header_text,elb_detail_text,elb_time_on_page,elb_tab_color" />
+                <input type="hidden" name="page_options" value="elb_popup_height, elb_popup_width, elb_background_img,elb_rounded_corners,elb_tab_text,elb_tab_placement,elb_header_text,elb_detail_text,elb_time_on_page,elb_tab_color" />
 		<table width="100%" >
 		<tr><td width="25%">Tab Text: </td>
 		<td >
@@ -401,10 +402,36 @@ http://www.socialintents.com/" title="', '">', '</a>') ?></p>
 			}
    		?>
 		</td></tr>
+		<tr><td>Rounded Corners: </td>
+		<td>
+		<?php 
+		if(get_option('elb_rounded_corners') && get_option('elb_rounded_corners') == 'yes') {
+     		?>
+     		<select id="elb_rounded_corners" name="elb_rounded_corners">
+			<option value="yes" selected>Yes</option>
+			<option value="no">No</option>
+		</select> 	
+    		<?php 
+			} else if(get_option('elb_rounded_corners') == 'no') {
+   		?>
+		<select id="elb_rounded_corners" name="elb_rounded_corners">
+			<option value="yes">Yes</option>
+			<option value="no" selected>No</option>
+		</select>
+		<?php 
+			} else{
+   		?>
+		<select id="elb_rounded_corners" name="elb_rounded_corners">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<?php 
+			} 
+   		?>
 		<tr><td></td><td>
 		<input id='elb_inputSaveSettings' type="button" value="<?php _e('Save Settings', $elb_domain) ?>" class="button-primary" /> 
 		<br><small >If you don't see your latest settings reflected in your site, please refresh your browser cache
-		or close and open the browser.
+		or close and open the browser.  
 		</small>	
 		</td></tr>
 		</table> 
@@ -437,7 +464,10 @@ var elb_tp= $('#elb_tab_placement').val();
 var elb_top= $('#elb_time_on_page').val();
 var elb_ww= $('#elb_popup_width').val();
 var elb_wh= $('#elb_popup_height').val();
-var url = 'https://www.socialintents.com/json/jsonSaveEmailSettings.jsp?tt='+elb_tt+'&ht='+elb_ht+'&wid='+elb_wid+'&dt='+elb_dt+'&tp='+elb_tp+'&wh='+elb_wh+'&ww='+elb_ww+'&top='+elb_top+'&callback=?';sessionStorage.removeItem("settings");
+var elb_rc= $('#elb_rounded_corners').val();
+var elb_bi= encodeURIComponent($('#elb_background_img').val());
+
+var url = 'https://www.socialintents.com/json/jsonSaveEmailSettings.jsp?tt='+elb_tt+'&ht='+elb_ht+'&wid='+elb_wid+'&dt='+elb_dt+'&tp='+elb_tp+'&wh='+elb_wh+'&ww='+elb_ww+'&top='+elb_top+'&rc='+elb_rc+'&bi='+elb_bi+'&callback=?';sessionStorage.removeItem("settings");
 $.ajax({
    type: 'GET',
     url: url,
