@@ -3,7 +3,7 @@
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
 Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
-Version: 1.0.12
+Version: 1.0.13
 Author: Social Intents
 Author URI: http://www.socialintents.com/
 */
@@ -37,7 +37,7 @@ echo("'roundedCorners':'".get_option('elb_rounded_corners')."',\n");
 echo("'backgroundImg':'".get_option('elb_background_img')."',\n");
         echo("'type':'email',\n");
         echo("'tabColor':'".get_option('elb_tab_color')."',\n");
-        echo("'tabWidth':'200px',\n");
+        echo("'tabWidth':'220px',\n");
         echo("'marginRight':'60px', \n");
 	echo("'marginTop':'180px', \n");
         echo("'headerTitle':'".get_option('elb_header_text')."'\n");
