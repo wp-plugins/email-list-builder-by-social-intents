@@ -3,7 +3,7 @@
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
 Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
-Version: 1.0.13
+Version: 1.0.14
 Author: Social Intents
 Author URI: http://www.socialintents.com/
 */
@@ -14,10 +14,21 @@ add_action('admin_notices', 'elb_notice');
 add_filter('plugin_action_links', 'elb_plugin_actions', 10, 2);
 add_action('wp_footer', 'elb_insert',4);
 
+define('SI_SMALL_LOGO',plugin_dir_url( __FILE__ ).'si-small.png');
+define('SI_DASHBOARD_URL', "https://www.socialintents.com/dashboard.do");
+
+
 function elb_init() {
     if(function_exists('current_user_can') && current_user_can('manage_options')) {
         add_action('admin_menu', 'elb_add_settings_page');
     }
+}
+
+function si_dashboard() {
+
+      echo '<div id="dashboarddiv"><iframe id="dashboardiframe" src="'.SI_DASHBOARD_URL.'" height=500 width=98% scrolling="yes"></iframe></div>      
+	<a href="'.SI_DASHBOARD_URL.'" target="_newWindow" onClick="javascript:document.getElementById(\'dashboarddiv\').innerHTML=\'\'; ">Open Social Intents in a new window</a>.
+      ';
 }
 
 function elb_insert() {
@@ -522,5 +533,6 @@ $.ajax({
 
 </script>
     <?php }
-    add_submenu_page('options-general.php', __('Social Intents', $elb_domain), __('Social Intents', $elb_domain), 'manage_options', 'email-list-builder-by-socialintents', 'elb_settings_page');
+    add_menu_page('Account Configuration', 'List Builder', 'administrator', 'si_dashboard', 'si_dashboard', SI_SMALL_LOGO);
+    add_submenu_page('si_dashboard', 'Dashboard', 'Dashboard', 'administrator', 'si_dashboard', 'si_dashboard');
 }?>

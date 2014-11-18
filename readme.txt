@@ -3,7 +3,7 @@ Contributors: SocialIntents
 Tags: email list, emails, contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform, sumome, campaign monitor
 Requires at least: 3.6
 Tested up to: 4.0
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,7 +45,7 @@ One of the easiest ways to double your email subscribers.  Integrates with MailC
 = 1.0.10 =
 * Background images and square corners added.
 
-= 1.0.13 =
+= 1.0.14 =
 * Settings changes
 
 == Description ==
