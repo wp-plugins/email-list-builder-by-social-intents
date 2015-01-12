@@ -3,7 +3,7 @@ Contributors: SocialIntents
 Tags: email list, emails, contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform, sumome, campaign monitor
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ One of the easiest ways to double your email subscribers.  Integrates with MailC
 
 = 1.0.16 =
 * WordPress 4.1 tested
+
+= 1.0.17 =
+* Default height and width changes
 
 == Description ==
 Email List Builder by Social Intents lets you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
