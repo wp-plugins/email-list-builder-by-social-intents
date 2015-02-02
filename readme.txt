@@ -3,56 +3,17 @@ Contributors: SocialIntents
 Tags: email list, emails, contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform, sumome, campaign monitor
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.0.17
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-One of the easiest ways to double your email subscribers.  Integrates with MailChimp, Campaign Monitor, Constant Contact, and CSV.  
+List Builder is the easiest way to double your email subscribers.  A lightbox that integrates with MailChimp, Campaign Monitor, Constant Contact.
 == Changelog ==
 
-= 1.0.0 =
-* Intitial Release of the Email List Builder Widget
+= 1.1.0 =
+* Minor feature enhancements
 
 
-= 1.0.1 =
-* Minor Bug Fixes
-
-
-= 1.0.2 =
-* Support for background images
-
-= 1.0.3 =
-* Customize popup size and location of tab to top, bottom, left, or right
-
-= 1.0.4 =
-* Campaign Monitor integration added
-
-
-= 1.0.5 =
-* Minor bug fixes in title
-
-
-= 1.0.6 =
-* URL Encoding text correctly
-
-= 1.0.7 =
-* Minor bug fixes
-
-
-= 1.0.8 =
-* Support for Wordpress 4.0
-
-= 1.0.10 =
-* Background images and square corners added.
-
-= 1.0.15 =
-* Permission changes
-
-= 1.0.16 =
-* WordPress 4.1 tested
-
-= 1.0.17 =
-* Default height and width changes
 
 == Description ==
 Email List Builder by Social Intents lets you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
