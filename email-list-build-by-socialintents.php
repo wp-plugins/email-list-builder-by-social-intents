@@ -2,7 +2,7 @@
 /*
 Plugin Name: Email List Builder by Social Intents
 Plugin URI: http://www.socialintents.com
-Description: Add a customizable and targeted email subscription widget to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
+Description: Add a customizable and targeted email subscription lightbox to any page.  Integrates with MailChimp and Constant Contact as well as CSV Exports (more coming soon).  Additional widgets such as Feedback, and Social Offers are also available! Free for 30 new email list subscribers a month.
 Version: 1.0.17
 Author: Social Intents
 Author URI: http://www.socialintents.com/

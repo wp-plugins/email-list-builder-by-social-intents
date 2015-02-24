@@ -7,7 +7,7 @@ Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-One of the easiest ways to double your email subscribers.  Integrates with MailChimp, Campaign Monitor, Constant Contact, and CSV.  
+One of the easiest ways to double your email list subscribers.  Integrates with MailChimp, Campaign Monitor, Constant Contact, and CSV.  
 == Changelog ==
 
 = 1.0.0 =
