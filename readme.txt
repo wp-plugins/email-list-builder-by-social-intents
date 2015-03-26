@@ -16,7 +16,7 @@ List Builder is the easiest way to double your email subscribers.  A lightbox th
 
 
 == Description ==
-Email List Builder by Social Intents lets you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
+Email List Builder by Social Intents helps you quickly add an email list signup form to any page to allow visitors to join your email list.  Instead of a sidebar widget, our mailing list builder brings extra attention by popping up
 a modal signup form. It can be configured to display on a particular page, or after a specified time on a page.  Add your CSS, your language, your background images, and your style to the form.  It's one of the fastest and most effective ways to build your email lists.
 
 To configure the email list plugin, you need a Social Intents account.  Already have an accout?  Great!  Otherwise, sign up for a free trial at <a href="http://www.socialintents.com">www.socialintents.com</a>.
