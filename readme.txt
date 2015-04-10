@@ -3,12 +3,15 @@ Contributors: SocialIntents
 Tags: email list, emails, contact, form, contact form, feedback, ajax, email, email form, page, social plugin, social sharing, social widget, wordpress, plugin, admin, widget, sidebar, admin, widget, aweber, mailchimp, MailChimp plugin, newsletter, newsletters, popover, popup, share, sharing, social networking, social plugin, subscribe, subscribers, subscription, tweet, twitter, autoresponder, email, e-mail, email marketing, mailing, mailing list, opt-in, optin, opt-in plugin, webform, sumome, campaign monitor
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 List Builder is the easiest way to double your email subscribers.  A lightbox that integrates with MailChimp, Campaign Monitor, Constant Contact.
 == Changelog ==
+
+= 1.1.1 =
+* Bug fix on configuration screen
 
 = 1.1.0 =
 * Minor feature enhancements
@@ -21,7 +24,7 @@ a modal signup form. It can be configured to display on a particular page, or af
 
 To configure the email list plugin, you need a Social Intents account.  Already have an accout?  Great!  Otherwise, sign up for a free trial at <a href="http://www.socialintents.com">www.socialintents.com</a>.
 
-Social Intents offers a free 14 day premium trial.  After that, it's free for up to 30 email subscribers a month.
+Social Intents offers a free 14 day premium trial.  
 
 **Getting Started with Email List Builder**
 
@@ -50,7 +53,7 @@ Questions or suggests?  Contact us at [www.socialintents.com](http://www.sociali
 
 **Other Social Intents Widgets**
 
-We also have Social Sharing, Shopping Cart Saver, and Social Offers widgets available that can be used to grow your social audience and power your sales.
+We also have Live Chat, Shopping Cart Saver, and Social Offers widgets available that can be used to grow your social audience and power your sales.
 
 
 To learn more about Social Intents visit us at [socialintents.com](http://www.socialintents.com/).
