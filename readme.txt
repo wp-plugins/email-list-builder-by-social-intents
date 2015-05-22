@@ -1,6 +1,6 @@
 === Email List Builder by Social Intents ===
 Contributors: SocialIntents
-Tags: email list, contact form, email form, mailchimp, newsletter, newsletters, subscribe, subscribers, subscription, email marketing, mailing list, opt-in, webform, sumome, campaign monitor
+Tags: email list, contact form, list builder, email form, mailchimp, newsletter, newsletters, subscribe, subscribers, subscription, email marketing, mailing list, sumome, campaign monitor
 Requires at least: 3.6
 Tested up to: 4.2
 Stable tag: 1.1.2
