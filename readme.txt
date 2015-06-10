@@ -1,14 +1,17 @@
-=== Email List Builder by Social Intents ===
+=== List Builder ===
 Contributors: SocialIntents
-Tags: email list, contact form, email form, page, aweber, mailchimp, newsletter, newsletters, subscribe, subscribers, subscription, email marketing, mailing list, opt-in, webform, sumome, campaign monitor
+Tags: list builder, email, getresponse, mailchimp, newsletter, sumo me, sumome, wp marketing, email list, contact form, lightbox, subscribe, customer service, customer support, campaign monitor, constant contact
 Requires at least: 3.6
 Tested up to: 4.2
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 List Builder is the easiest way to double your email subscribers.  A lightbox that integrates with MailChimp, Campaign Monitor, Constant Contact.
 == Changelog ==
+
+= 1.1.3 =
+* Advanced settings
 
 = 1.1.2 =
 * Support for 4.2
@@ -94,9 +97,6 @@ Yes, you do.  You can sign up for a free trial at [socialintents.com](http://www
 
 No, Email List Builder is a service. Simply sign up for the service, grab your widget key, and save it in your plugin.
 
-= Can I use Email List Builder for Free? =
-
-Yes absolutely, all Social Intents accounts include an always free 1 option for up to 30 new email subscribers a month.
 
 
 
