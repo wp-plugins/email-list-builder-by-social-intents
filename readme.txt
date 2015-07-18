@@ -1,6 +1,6 @@
 === List Builder ===
 Contributors: SocialIntents
-Tags: list builder, email, getresponse, mailchimp, newsletter, sumo me, sumome, wp marketing, email list, contact form, lightbox, subscribe, customer service, customer support, campaign monitor, constant contact
+Tags: list builder, email, getresponse, mailchimp, wordpress, newsletter, sumo me, sumome, wp marketing, email list, contact form, lightbox, subscribe, customer service, customer support, campaign monitor, constant contact
 Requires at least: 3.6
 Tested up to: 4.2
 Stable tag: 1.1.3
